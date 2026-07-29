@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "support-copilot"
+version = "1.0.0"
+description = "Graph-routed RAG customer support with LangChain, voice, and tickets"
+requires-python = ">=3.11"
+
+[project.scripts]
+support-copilot = "support_copilot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
